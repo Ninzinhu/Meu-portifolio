@@ -453,3 +453,15 @@ footer .column > a:hover{
   
     
 }
+
+.card2 p{
+    color: #FFF;
+
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    letter-spacing: -0.4px;    
+}
