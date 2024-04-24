@@ -426,3 +426,30 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+
+.card2{
+    width: 100%;
+    height: 745px;
+    background-color:#0C0F22;
+    margin-top: 10rem;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25)
+   
+    
+    
+    
+           
+}
+
+.features2{
+    margin-top: 10px;
+}
+
+
+.container2{
+    margin-bottom: 10px;
+  
+    
+}
