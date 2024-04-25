@@ -29,7 +29,7 @@
             <P>
                 Olá! Me chamo João e tenho 21 anos,sou um entusiasta apaixonado em Tecnologia desde pequeno.
             </P>
-            <button class="btn">Download Cv</button>
+            <button class="btn" oneclick="window.open('CV.pdf')" >Download Cv</button>
         </div>
         <div class="image">
             <img src="development-animate.svg" alt="dev">
@@ -74,10 +74,24 @@
  <section class="container2">
     <div class="feature2">
         <div class="card2">
-            <h2 class="header">Sobre <span>Mim</span></h2>
-            <p>
-                Me chamo João Victor tenho 21 anos sou Web Design e desenvolvedor FullStack. Sou formado em Sistema de informações, desde pequeno sempre fui apaixonado pela parte de desenvolvimento Web e desenvolvimento de programas.
-            </p>
+            <div class="profile">
+                <div class="section_pic-container">
+                    <!-- <img src="about.jpg" alt="JoaoProfile"> -->
+                    <div id="blur-image">
+                        <img src="about.jpg" alt="JoaoProfile">
+
+                    </div>
+                   
+                    </div>
+               <div class="section_text">
+                <p class="header">Sobre <span>Mim</span></p>
+                <p class="section_text_p2">FullStack Developer</p>
+                <h1 class="title">Me chamo João Victor tenho 21 anos sou Web Design e desenvolvedor FullStack. Sou formado em Sistema de informações, desde pequeno sempre fui apaixonado pela parte de desenvolvimento Web e desenvolvimento de programas.
+                </h1>
+               <button class="btn"></button>
+               </div>
+            </div>
+            
     
         </div>
         
@@ -157,7 +171,7 @@
     <span class="blur"></span>
     <div class="column">
         <div class="logo">
-            <img src="images/logo.png">
+            <!-- <img src="images/logo.png"> -->
         </div>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
