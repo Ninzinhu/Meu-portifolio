@@ -490,17 +490,31 @@ footer .column > a:hover{
    text-align: center; 
 }
 
-img {
+.profile img[alt="JoaoProfile"] {
     width: 497.607px;
     height: 545.535px;    
-    border-radius: 250rem;
+    border-radius: 360rem;
     opacity:70%;
-    background: linear-gradient(#9747FF, #23174f); /*gradiente de cores */
+    /* background: linear-gradient(#9747FF, #23174f);  */
     border: 3px solid #402788 ; /* borda transparente */
     box-shadow:  0 10px 20px #402788, 0 0 100px 10px #23174f;
     
     /* border-radius: 10rem; */
     /* filter: blur(12.449999809265137px);   */
   
+}
+
+.section_text .header {
+    padding-top: 8rem;
+    font-weight: 800;
+    line-height: 20px; /* 55.556% */
+    letter-spacing: -0.4px;   
+    font-family: Inter;
+    font-size: 36px
+    
+    
+    
+    
+
 }
 
