@@ -187,6 +187,7 @@ section .header span {
 }
 
 .features .card:hover {
+  transform: translateY(-5px) scale(1.03);
   background-color: #23174f;
   border-color: #9747ff;
 }
@@ -248,6 +249,7 @@ section .header span {
 .pricing .card:hover {
   background-color: #23174f;
   border-color: #9747ff;
+  transform: translateY(-5px) scale(1.03);
 }
 
 .pricing .card .content {
@@ -561,4 +563,71 @@ nav .hamburguer-menu {
   nav .hamburguer-menu {
     display: block;
   }
+}
+
+.portifolio {
+  background-color: #0c0f22;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.Portifolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.3rem;
+  margin-top: 4.2rem;
+}
+
+.row img {
+  height: auto;
+  width: 100%;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
+}
+
+.row {
+  background: #080b1c;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px #23174f;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.row h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.row i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #402788;
+}
+
+.row h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.row:hover {
+  border: 1px solid #9747ff;
+  transform: translateY(-5px) scale(1.03);
+  cursor: pointer;
 }
