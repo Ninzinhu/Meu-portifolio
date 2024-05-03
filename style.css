@@ -404,6 +404,10 @@ footer .column > a:hover {
     text-align: center;
   }
 
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .features {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -416,91 +420,6 @@ footer .column > a:hover {
     grid-template-columns: 1fr 150px;
   }
 }
-
-/* .card2 {
-  width: 100%;
-  height: 745px;
-  background-color: #0c0f22;
-  margin-top: 10rem;
-  flex-shrink: 0;
-  padding: 20px;
-  border-radius: 3rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-} */
-
-/* .features2{
-    margin-top: 12px;
-}
-
-
-.container2{
-    margin-bottom: 10px;
-  
-    
-}
-
-.card2 p{
-    color: #FFF;
-
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-family: "SF Pro Display";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; 
-    letter-spacing: -0.4px;    
-}
-
-.profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-}
-
-.section_pic-container{
-    display: flex;
-    height: 600px;
-    width: 600px;
-    margin: auto 0;
-    padding-left: 3rem;
-    padding-bottom: 3rem;
-    border-radius: 15px;
-    
-    
-}
-
-.section_tex{
-    align-items: center;
-   text-align: center; 
-}
-
-.profile img[alt="JoaoProfile"] {
-    width: 497.607px;
-    height: 545.535px;    
-    border-radius: 360rem;
-    opacity:70%;
-
-    border: 3px solid #402788 ;
-    box-shadow:  0 10px 20px #402788, 0 0 100px 10px #23174f;
-    
-
-  
-}
-
-.section_text .header {
-    padding-top: 8rem;
-    font-weight: 800;
-    line-height: 20px;  
-    letter-spacing: -0.4px;   
-    font-family: Inter;
-    font-size: 36px
-    
-    
-    
-    
-
-} */
 
 main {
   margin-top: 4rem;
@@ -564,43 +483,97 @@ nav .hamburguer-menu {
     display: block;
   }
 }
-
-.portifolio {
-  background-color: #0c0f22;
+/* Portifolio menu */
+.portfolio {
   margin-top: 4rem;
   border-radius: 2rem;
   padding: 2rem;
 }
 
-.Portifolio-content {
+.portfolio .center-text {
+  font-size: 17px;
+  height: 500;
+  font-family: Inter;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.row-text h5 {
+  color: #fff;
+}
+
+.portfolio .center-text span {
+  color: #9747ff;
+}
+
+/* .Portifolio-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
+} */
+
+.Portifolio-content {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Alterado o min-width para 300px */
+  align-items: center;
+  gap: 2.3rem;
+  margin-top: 4.2rem;
 }
 
-.row img {
+/* .row img {
   height: auto;
   width: 100%;
   border-radius: 28px;
   margin-bottom: 1.4rem;
+} */
+
+.row img {
+  max-width: 100%; /* Alterado para garantir que a imagem não ultrapasse o contêiner pai */
+  height: auto;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
 }
 
-.row {
-  background: #080b1c;
+/* .row {
+  background: #0c0f22;
   border-radius: 28px;
   border: 1px solid transparent;
   box-shadow: 0 0 5px #23174f;
   padding: 20px;
   transition: all 0.5s ease;
+} */
+
+.row {
+  background: #0c0f22;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px #23174f;
+  padding: 20px;
+  transition: all 0.5s ease;
+  width: 100%; /* Alterado para ocupar toda a largura disponível */
 }
+
+/* .main-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+} */
 
 .main-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  width: 100%; /* Alterado para ocupar toda a largura disponível */
 }
 
 .row h5 {
@@ -620,6 +593,7 @@ nav .hamburguer-menu {
 }
 
 .row h4 {
+  color: #fff;
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -630,4 +604,14 @@ nav .hamburguer-menu {
   border: 1px solid #9747ff;
   transform: translateY(-5px) scale(1.03);
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .Portifolio-content {
+    grid-template-columns: 1fr; /* Alterado para uma coluna única em telas pequenas */
+  }
+
+  .row {
+    max-width: 100%; /* Garantindo que a largura não ultrapasse a tela */
+  }
 }
