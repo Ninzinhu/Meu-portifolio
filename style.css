@@ -519,10 +519,7 @@ nav .hamburguer-menu {
 
 .Portifolio-content {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Alterado o min-width para 300px */
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2.3rem;
   margin-top: 4.2rem;
